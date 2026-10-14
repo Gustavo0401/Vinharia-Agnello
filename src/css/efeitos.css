@@ -56,3 +56,50 @@ header nav a:focus {
 .produtoImagem:nth-child(even) .preco {
   color: #ff5555;
 }
+/*destaque no titulo*/
+
+#contato_direto h1::before {
+  content: "◆";
+  color: #d00000;
+  font-size: 22px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+/* linha decorativa */
+
+#contato_pre-venda h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #d00000;
+  margin: 15px auto 0;
+  transition: width 0.3s ease;
+}
+
+#contato_pre-venda h2:hover::after {
+  width: 180px;
+}
+
+/*destaque na primeira letra no final*/
+
+#FAQ p::first-letter {
+  color: #d00000;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Destaque na linha de perguntas*/
+#FAQ h3::before {
+  content: "❯ ";
+  color: #d00000;
+  font-size: 16px;
+}
+
+/*Após os links de contato*/
+#contato_direto li a::after {
+  content: " ↗";
+  color: #d00000;
+  font-size: 12px;
+}
