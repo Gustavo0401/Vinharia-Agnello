@@ -28,4 +28,4 @@ Uma página focada na história e em toda a trajetória da Vinharia do agnello.
 
 ## 🔗 link do projeto
 
-### https://bsinhorelli.github.io/vinharia-agnello-front/
+### https://github.com/Gustavo0401/Vinharia-Agnello/blob/main/index.html
