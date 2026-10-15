@@ -23,6 +23,9 @@ Uma página onde é possível avaliar individualmente todas as opções disponí
 ### 📖 Sobre
 Uma página focada na história e em toda a trajetória da Vinharia do agnello.
 
+# 📄 efeitos visuais
+visuais dos produtos, personalizando suas bordas, sombras e movimentos ao passar o mouse. Também estiliza os botões com cores, fontes e efeitos, melhorando a acessibilidade dos links, botões selecionados, diferencia alguns produtos e preços por meio de cores específicas.
+
 ## 🔗 link do projeto
 
 ### https://gustavo0401.github.io/Vinharia-Agnello/
