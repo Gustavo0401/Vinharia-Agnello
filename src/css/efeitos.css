@@ -1,4 +1,4 @@
-@keyframes fade-in {
+@keyframes fadein {
   from {
     opacity: 0;
   }
@@ -77,34 +77,32 @@ nav a:focus-visible::after {
   cursor: pointer;
   transition:
     background 0.3s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+    transform 0.3s ease;
 }
 
 .produtoImagem button:hover {
   background: #8b0000;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(208, 0, 0, 0.25);
-}
+  transform: scale(1.05);
 
-button {
+  button {
   transition:
     background-color 0.25s ease,
     transform 0.2s ease,
     box-shadow 0.2s ease;
 }
-
 button:active {
   transform: scale(0.98);
 }
+}
 
-button:focus-visible {
+/*destaque dos botões*/
+.produtoImagem button:focus {
   outline: 2px solid #ff5555;
   outline-offset: 4px;
 }
 
 /*Destaque dos Links*/
-header nav a:focus-visible {
+header nav a:focus {
   outline: 2px solid #d00000;
   outline-offset: 5px;
   border-radius: 2px;
@@ -148,66 +146,6 @@ header nav a:focus-visible {
   width: 180px;
 }
 
-#contato_pre-venda input,
-#contato_pre-venda textarea {
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-#contato_pre-venda input:focus,
-#contato_pre-venda textarea:focus {
-  box-shadow: 0 0 0 3px rgba(208, 0, 0, 0.2);
-}
-
-#contato_pre-venda form button {
-  transition:
-    background-color 0.25s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-#contato_pre-venda form button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(208, 0, 0, 0.25);
-}
-
-.galeria-imagens section {
-  transition:
-    border-color 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.galeria-imagens section:hover {
-  border-color: #d00000;
-  box-shadow: 0 6px 18px rgba(208, 0, 0, 0.2);
-}
-
-.galeria-imagens img {
-  transition: transform 0.4s ease;
-}
-
-.galeria-imagens section:hover img {
-  transform: scale(1.04);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation: none !important;
-    scroll-behavior: auto !important;
-    transition: none !important;
-  }
-
-  .produtoImagem:hover,
-  .produtoImagem button:hover,
-  button:active,
-  .galeria-imagens section:hover img {
-    transform: none;
-  }
-}
-
 /*destaque na primeira letra no final*/
 
 #FAQ p::first-letter {
@@ -228,4 +166,10 @@ header nav a:focus-visible {
   content: " ↗";
   color: #d00000;
   font-size: 12px;
+}
+#contato_pre-venda input,
+#contato_pre-venda textarea {
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
